@@ -1,0 +1,43 @@
+{
+    "title": "Install a CWL runner",
+    "description": "Learn how how to set up a CWL runner and run your first CWL document.",
+    "details": {
+        "intro": {
+            "text": "intro.md",
+            "foreground": "foreground.sh",
+            "background": "background.sh"
+        },
+        "steps": [
+            {
+                "title": "Installing CWL runner",
+                "text": "install.md"
+            },
+            {
+                "title": "Run your first CWL document",
+                "text": "first.md"
+            }
+        ],
+        "assets": {
+            "host01": [
+                {
+                    "file": "first-cwl.cwl",
+                    "target": "."
+                }, 
+                {
+                    "file": "params.yml",
+                    "target": "."
+                },
+                {
+                    "file": "hello.js",
+                    "target": "."
+                }
+            ]
+        },
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node"
+    }
+}
