@@ -13,8 +13,17 @@
                 "text": "stage-in.md"
             },
             {
-                "title": "Run the crop example",
+                "title": "Run the crop application example",
                 "text": "d1.md"
+            },
+            {"title": "Run the scatter crop application example",
+            "text": "d2.md"
+            },
+            {"title": "Run the composite two-step workflow example",
+            "text": "d3.md"
+            },
+            {"title": "Run the multiple inputs composite two-step workflow Example",
+            "text": "d4.md"
             }
         ],
         "assets": {
