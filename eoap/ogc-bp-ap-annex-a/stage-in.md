@@ -26,7 +26,7 @@ Go back to the previous working directory:
 
 Check the content of the staged data directory:
 
-`tree reference data`{{execute}}
+`tree reference-data`{{execute}}
 
 The output is:
 
