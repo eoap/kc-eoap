@@ -2,6 +2,9 @@
     "items": [
         {
             "path": "cwl-runner"
+        },
+        {
+            "path": "how-to"
         }
     ]
 }
