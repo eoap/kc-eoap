@@ -3,7 +3,8 @@
     "description": "CWL how-to in the Earth Observation context.",
     "details": {
         "intro": {
-            "text": "intro.md"
+            "text": "intro.md",
+            "background": "background.sh"
         },
         "steps": [
             {
