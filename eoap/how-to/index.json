@@ -1,0 +1,45 @@
+{
+    "title": "CWL How-to",
+    "description": "CWL how-to in the Earth Observation context.",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "How to return an output file",
+                "text": "01-output.md"
+            },
+            {
+                "title": "How to capture the stdout",
+                "text": "02-stdout.md"
+            }
+        ],
+        "assets": {
+            "host01": [
+                {
+                    "file": "return-output-file.cwl",
+                    "target": "."
+                },
+                {
+                    "file": "return-output-file.yml",
+                    "target": "."
+                },
+                {
+                    "file": "capture-stdout.cwl",
+                    "target": "."
+                },
+                {
+                    "file": "capture-stdout.yml",
+                    "target": "."
+                }
+            ]
+        },
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "ubuntu"
+    }
+}
