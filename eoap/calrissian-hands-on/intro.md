@@ -1,4 +1,4 @@
 In this scenario you will:
 
-* install a CWL runner
-* run your fist CWL document
+* Configure the Kubernetes cluster to run Calrissian job
+* Submit a Carlissian job
