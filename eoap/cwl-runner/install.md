@@ -16,4 +16,4 @@ In the rest of the course, we will use existing Docker images for running exampl
 
 Test _docker_ with: 
 
-`docker run --rm docker.io/hello-world:latest`
+`docker run --rm docker.io/hello-world:latest`{{execute}}
