@@ -1,0 +1,30 @@
+{
+    "title": "Run the OGC Application Package best practice examples",
+    "description": "This tutorial will show you how to run the OGC Application Package best practice examples.",
+    "details": {
+        "intro": {
+            "text": "intro.md",
+            "foreground": "foreground.sh",
+            "background": "background.sh"
+        },
+        "steps": [
+            {
+                "title": "Stage the Sentinel-2 data",
+                "text": "stage.md"
+            },
+            {
+                "title": "Run the crop example",
+                "text": "d1.md"
+            }
+        ],
+        "assets": {
+            "host01": []
+        },
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "ubuntu"
+    }
+}

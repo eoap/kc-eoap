@@ -1,6 +1,6 @@
 {
-    "title": "CWL How-to",
-    "description": "CWL how-to in the Earth Observation context.",
+    "title": "Getting started with CWL in the Earth Observation context",
+    "description": "Learn the basics of CWL by running a series of how-to's.",
     "details": {
         "intro": {
             "text": "intro.md",
