@@ -10,7 +10,7 @@
         "steps": [
             {
                 "title": "Stage the Sentinel-2 data",
-                "text": "stage.md"
+                "text": "stage-in.md"
             },
             {
                 "title": "Run the crop example",
