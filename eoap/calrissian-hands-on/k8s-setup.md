@@ -44,7 +44,7 @@ spec:
     - ReadWriteMany
   resources:
     requests:
-      storage: 100Mi
+      storage: 1Gi
   storageClassName: openebs
 EOF
 ```{{execute}}
@@ -60,7 +60,7 @@ spec:
     - ReadWriteMany
   resources:
     requests:
-      storage: 100Mi
+      storage: 1Gi
   storageClassName: openebs
 EOF
 ```{{execute}}

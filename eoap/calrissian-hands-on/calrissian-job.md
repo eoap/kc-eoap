@@ -18,6 +18,13 @@ spec:
       containers:
       - name: calrissian
         image: ghcr.io/duke-gcb/calrissian/calrissian:0.16.0
+        resources:
+        requests:
+          memory: "64Mi"
+          cpu: "100m"
+        limits:
+          memory: "128Mi"
+          cpu: "250m"
         command: ["calrissian"]
         args:
           - "--stdout"
