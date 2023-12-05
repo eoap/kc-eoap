@@ -1,12 +1,21 @@
 echo "1. Install dependencies for RWX storage class"
 
-apt update
-apt install -y nfs-common
+apt update > /dev/null 2>&1
+apt install -y nfs-common  > /dev/null 2>&1
 
 echo "2. Install OpenEBS"
-helm repo add openebs-nfs https://openebs.github.io/dynamic-nfs-provisioner
-helm repo update
-helm upgrade --install openebs-nfs  openebs-nfs/nfs-provisioner --namespace openebs --create-namespace --set ndm.enabled=false --set ndmOperator.enabled=false --set localprovisioner.enabled=false --set nfs-provisioner.enabled=true  --set-string nfsStorageClass.backendStorageClass=local-path --set nfsStorageClass.name=openebs
+helm repo add openebs-nfs https://openebs.github.io/dynamic-nfs-provisioner  > /dev/null 2>&1
+helm repo update  > /dev/null 2>&1
+helm upgrade \
+    --install openebs-nfs  openebs-nfs/nfs-provisioner \
+    --namespace openebs \
+    --create-namespace \
+    --set ndm.enabled=false \
+    --set ndmOperator.enabled=false \
+    --set localprovisioner.enabled=false \
+    --set nfs-provisioner.enabled=true \
+    --set-string nfsStorageClass.backendStorageClass=local-path \
+    --set nfsStorageClass.name=openebs  > /dev/null 2>&1
 
 echo "3. Create RWX storage class"
 

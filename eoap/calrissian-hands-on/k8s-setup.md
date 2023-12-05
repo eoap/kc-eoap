@@ -34,7 +34,7 @@ kubectl --namespace="$NAMESPACE_NAME" create rolebinding log-reader-default-bind
 ## Create the volumes
 
 ```
-cat <<EOF | kubectl apply -f -
+cat <<EOF | kubectl apply -n calrissian-demo-project -f -
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -50,7 +50,7 @@ EOF
 ```{{execute}}
 
 ```
-cat <<EOF | kubectl apply -f -
+cat <<EOF | kubectl apply -n calrissian-demo-project -f -
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:

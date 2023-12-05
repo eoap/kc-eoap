@@ -1,6 +1,6 @@
 {
-    "title": "Install a CWL runner",
-    "description": "Learn how how to set up a CWL runner and run your first CWL document.",
+    "title": "Calrissian hands-on",
+    "description": "Run your first CWL document on Kubernetes using Calrissian.",
     "details": {
         "intro": {
             "text": "intro.md",
@@ -9,29 +9,20 @@
         },
         "steps": [
             {
-                "title": "Installing CWL runner",
-                "text": "install.md"
+                "title": "Kubernetes cluster setup",
+                "text": "k8s-setup.md"
             },
             {
-                "title": "Run your first CWL document",
-                "text": "first.md"
+                "title": "Create the CWL document configMap",
+                "text": "cwl-setup.md"
+            },
+            {
+                "title": "Calrissian job",
+                "text": "calrissian-job.md"
             }
         ],
         "assets": {
-            "host01": [
-                {
-                    "file": "first-cwl.cwl",
-                    "target": "."
-                }, 
-                {
-                    "file": "params.yml",
-                    "target": "."
-                },
-                {
-                    "file": "hello.js",
-                    "target": "."
-                }
-            ]
+            "host01": []
         },
         "finish": {
             "text": "finish.md"
