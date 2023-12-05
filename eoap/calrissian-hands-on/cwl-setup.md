@@ -1,8 +1,4 @@
 
-Download a CWL document
-
-`wget https://github.com/eoap/mastering-app-package/releases/download/1.0.0/app-water-bodies-cloud-native.1.0.0.cwl`{{execute}}
-
 Create a configMap with the CWL document:
 
 `kubectl -n calrissian-demo-project create configmap cwl-workflow --from-file=workflow.cwl=app-package.cwl`{{execute}}
