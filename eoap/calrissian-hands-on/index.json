@@ -22,7 +22,12 @@
             }
         ],
         "assets": {
-            "host01": []
+            "host01": [
+                {
+                    "file": "app-package.cwl",
+                    "target": "."
+                }
+            ]
         },
         "finish": {
             "text": "finish.md"

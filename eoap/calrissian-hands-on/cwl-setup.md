@@ -5,10 +5,9 @@ Download a CWL document
 
 Create a configMap with the CWL document:
 
-`kubectl -n calrissian-demo-project create configmap cwl-workflow --from-file=workflow.cwl=app-water-bodies-cloud-native.1.0.0.cwl`{{execute}}
+`kubectl -n calrissian-demo-project create configmap cwl-workflow --from-file=workflow.cwl=app-package.cwl`{{execute}}
 
 Create a configMap with the workflow parameters:
-
 
 ```
 cat <<EOF | kubectl -n calrissian-demo-project apply -f -
