@@ -8,7 +8,7 @@ helm repo add openebs-nfs https://openebs.github.io/dynamic-nfs-provisioner  > /
 helm repo update  > /dev/null 2>&1
 helm upgrade \
     --install openebs-nfs  openebs-nfs/nfs-provisioner \
-    --namespace openebs \
+    --namespace default \
     --create-namespace \
     --set ndm.enabled=false \
     --set ndmOperator.enabled=false \
