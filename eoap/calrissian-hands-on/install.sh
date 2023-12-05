@@ -38,6 +38,5 @@ spec:
   storageClassName: openebs
 EOF
 
-
-
+kubectl wait --for=jsonpath='{.status.phase}'=Bound pvc -l nfs.openebs.io/nfs-pvc-name=local-path-pvc --timeout=5m 
 
