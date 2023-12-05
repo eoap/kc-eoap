@@ -20,7 +20,9 @@ helm upgrade \
     --set-string nfsStorageClass.backendStorageClass=local-path \
     --set nfsStorageClass.name=openebs  > /dev/null 2>&1
 
-echo "4. Create RWX storage class"
+echo "4. Veryfying RWX storage class"
+
+kubectl wait --for=condition=ready pod -l app=nfs-provisioner --timeout=5m  # > /dev/null 2>&1  
 
 cat <<EOF | kubectl apply -f -
 apiVersion: v1
